@@ -1,0 +1,710 @@
+<app-navbar-style-five></app-navbar-style-five>
+
+<!-- Main Banner -->
+<div class="agency-portfolio-home-slides">
+    <owl-carousel-o [options]="homeSlides">
+        <ng-template carouselSlide *ngFor="let Content of agencyPortfolioMainBanner;">
+            <div class="agency-portfolio-main-banner" style="background-image: url({{Content.bgImg}});">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <div class="container">
+                            <div class="portfolio-banner-content">
+                                <span class="sub-title">{{Content.subTitle}}</span>
+                                <h1>{{Content.title}}</h1>
+                                <p>{{Content.desc}}</p>
+                                <a routerLink="/{{Content.btnLink}}" class="btn btn-secondary">{{Content.btnText}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>
+
+<!-- Projects -->
+<div class="our-latest-projects ptb-80">
+    <div class="container">
+        <div class="section-title text-start">
+            <h2>Our Latest <span>Projects</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <ul class="nav-tabset">
+            <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab1'}">
+                <span (click)="switchTab($event, 'tab1')">
+                    All
+                </span>
+            </li>
+            <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab2'}">
+                <span (click)="switchTab($event, 'tab2')">
+                    Design
+                </span>
+            </li>
+            <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab3'}">
+                <span (click)="switchTab($event, 'tab3')">
+                    Branding
+                </span>
+            </li>
+            <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab4'}">
+                <span (click)="switchTab($event, 'tab4')">
+                    Architecture
+                </span>
+            </li>
+            <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab5'}">
+                <span (click)="switchTab($event, 'tab5')">
+                    Creative
+                </span>
+            </li>
+        </ul>
+        <div class="tabs-container">
+            <div class="pane" id="tab1" *ngIf="currentTab === 'tab1'">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img1.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img2.jpg" alt="image">
+                            <div class="content">
+                                <span>Camera</span>
+                                <h3>Worldwide Photography</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img3.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Design</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img4.jpg" alt="image">
+                            <div class="content">
+                                <span>Tower</span>
+                                <h3>Creative Tower</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img5.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative World</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img6.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Style</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img7.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img8.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img9.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img10.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="tab2" *ngIf="currentTab === 'tab2'">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img4.jpg" alt="image">
+                            <div class="content">
+                                <span>Tower</span>
+                                <h3>Creative Tower</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img5.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative World</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img6.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Style</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img7.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img8.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img9.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img10.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="tab3" *ngIf="currentTab === 'tab3'">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img6.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Style</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img7.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img8.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img9.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img10.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="tab4" *ngIf="currentTab === 'tab4'">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img9.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img10.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img1.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img2.jpg" alt="image">
+                            <div class="content">
+                                <span>Camera</span>
+                                <h3>Worldwide Photography</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img3.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Design</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img6.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Style</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img7.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img8.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img4.jpg" alt="image">
+                            <div class="content">
+                                <span>Tower</span>
+                                <h3>Creative Tower</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img5.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative World</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pane" id="tab5" *ngIf="currentTab === 'tab5'">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img1.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img2.jpg" alt="image">
+                            <div class="content">
+                                <span>Camera</span>
+                                <h3>Worldwide Photography</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img3.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Design</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img9.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img10.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img4.jpg" alt="image">
+                            <div class="content">
+                                <span>Tower</span>
+                                <h3>Creative Tower</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img5.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative World</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img6.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Style</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img7.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="single-latest-projects">
+                            <img src="assets/img/agency-portfolio-projects/img8.jpg" alt="image">
+                            <div class="content">
+                                <span>Design</span>
+                                <h3>Creative Woman</h3>
+                            </div>
+                            <a routerLink="/projects-details" class="link-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+<div class="agency-portfolio-about-area ptb-80">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-text-box">
+                    <img src="assets/img/agency-portfolio-about-image/img1.jpg" alt="image">
+                    <h3>About Us</h3>
+                    <p>Vestibulum ac posuere mi. Nullam euismod dui condimentum metus consequat blandit. Donec leo tortor, commodo eget fermentum id, molestie quis est. Ut lectus metus, condimentum eget facilisis sed, fermentum et tortor.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-text-box">
+                    <img src="assets/img/agency-portfolio-about-image/img2.jpg" alt="image">
+                    <h3>Our Vision</h3>
+                    <p>Vestibulum ac posuere mi. Nullam euismod dui condimentum metus consequat blandit. Donec leo tortor, commodo eget fermentum id, molestie quis est. Ut lectus metus, condimentum eget facilisis sed, fermentum et tortor.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-text-box">
+                    <img src="assets/img/agency-portfolio-about-image/img3.jpg" alt="image">
+                    <h3>Our Mission</h3>
+                    <p>Vestibulum ac posuere mi. Nullam euismod dui condimentum metus consequat blandit. Donec leo tortor, commodo eget fermentum id, molestie quis est. Ut lectus metus, condimentum eget facilisis sed, fermentum et tortor.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Feedback -->
+<div class="agency-portfolio-feedback-area ptb-80">
+    <div class="container">
+        <div class="agency-portfolio-feedback-slides">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="agency-portfolio-feedback-item">
+                        <img src="assets/img/client-image/1.jpg" alt="image">
+                        <p>Pellentesque sed purus eu urna vulputate interdum quis sit amet sapien. Pellentesque porta mauris at orci sagittis commodo. Curabitur aliquam nibh odio, vel ornare nisl volutpat quis. Maecenas congue dapibus lacus id fringilla. Vestibulum id augue massa. Proin sed neque dapibus, vulputate ligula eget, aliquam eros.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="agency-portfolio-feedback-item">
+                        <img src="assets/img/client-image/2.jpg" alt="image">
+                        <p>Pellentesque sed purus eu urna vulputate interdum quis sit amet sapien. Pellentesque porta mauris at orci sagittis commodo. Curabitur aliquam nibh odio, vel ornare nisl volutpat quis. Maecenas congue dapibus lacus id fringilla. Vestibulum id augue massa. Proin sed neque dapibus, vulputate ligula eget, aliquam eros.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="agency-portfolio-feedback-item">
+                        <img src="assets/img/client-image/3.jpg" alt="image">
+                        <p>Pellentesque sed purus eu urna vulputate interdum quis sit amet sapien. Pellentesque porta mauris at orci sagittis commodo. Curabitur aliquam nibh odio, vel ornare nisl volutpat quis. Maecenas congue dapibus lacus id fringilla. Vestibulum id augue massa. Proin sed neque dapibus, vulputate ligula eget, aliquam eros.</p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Partner -->
+<div class="agency-portfolio-partner-area ptb-80">
+    <div class="container">
+        <div class="agency-portfolio-partner-slides">
+            <owl-carousel-o [options]="partnerSlides">
+                <ng-template carouselSlide>
+                    <div class="single-agency-portfolio-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/agency-portfolio-partner-image/img1.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-agency-portfolio-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/agency-portfolio-partner-image/img2.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-agency-portfolio-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/agency-portfolio-partner-image/img2.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-agency-portfolio-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/agency-portfolio-partner-image/img4.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-agency-portfolio-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/agency-portfolio-partner-image/img5.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-agency-portfolio-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/agency-portfolio-partner-image/img6.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Blog -->
+<div class="blog-area ptb-80">
+    <div class="container">
+        <div class="section-title text-start">
+            <h2>Our Recent <span>News</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="blog-slides">
+            <owl-carousel-o [options]="blogSlides">
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="post-image">
+                            <a routerLink="/blog-details"><img src="assets/img/blog-image/1.jpg" alt="image"></a>
+                        </div>
+                        <div class="post-content">
+                            <ul class="post-meta">
+                                <li>By <a routerLink="/blog-grid">Admin</a></li>
+                                <li>20 February 2024</li>
+                            </ul>
+                            <h3><a routerLink="/blog-details">The security risks of changing package owners</a></h3>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="post-image">
+                            <a routerLink="/blog-details"><img src="assets/img/blog-image/2.jpg" alt="image"></a>
+                        </div>
+                        <div class="post-content">
+                            <ul class="post-meta">
+                                <li>By <a routerLink="/blog-grid">Admin</a></li>
+                                <li>21 February 2024</li>
+                            </ul>
+                            <h3><a routerLink="/blog-details">Tips to Protecting Your Business and Family</a></h3>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="post-image">
+                            <a routerLink="/blog-details"><img src="assets/img/blog-image/3.jpg" alt="image"></a>
+                        </div>
+                        <div class="post-content">
+                            <ul class="post-meta">
+                                <li>By <a routerLink="/blog-grid">Admin</a></li>
+                                <li>22 February 2024</li>
+                            </ul>
+                            <h3><a routerLink="/blog-details">Protect Your Workplace from Cyber Attacks</a></h3>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-blog-item">
+                        <div class="post-image">
+                            <a routerLink="/blog-details"><img src="assets/img/blog-image/4.jpg" alt="image"></a>
+                        </div>
+                        <div class="post-content">
+                            <ul class="post-meta">
+                                <li>By <a routerLink="/blog-grid">Admin</a></li>
+                                <li>22 February 2024</li>
+                            </ul>
+                            <h3><a routerLink="/blog-details">Four New WordPress.com Color Schemes</a></h3>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Creative -->
+<div class="creative-area" *ngFor="let bgImage of creativeBGImage;" style="background-image: url({{bgImage.img}});">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="creative-inner-area">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="single-counter">
+                                <h3><span [countUp]="1579">00</span></h3>
+                                <p>Completed Projects</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 col-md-6">
+                            <div class="single-counter">
+                                <h3><span [countUp]="750">00</span></h3>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

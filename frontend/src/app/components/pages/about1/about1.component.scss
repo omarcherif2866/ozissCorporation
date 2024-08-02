@@ -1,0 +1,75 @@
+@import "../home-demo-one/home-demo-one.component.scss";
+
+// About CSS
+.about-content {
+    .section-title {
+        text-align: start;
+        margin-bottom: 18px;
+
+        .bar {
+            margin: {
+                right: 0;
+                left: 0;
+            };
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+.about-inner-area {
+    margin-top: 60px;
+
+    .about-text {
+        h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .about-image {
+        margin-bottom: 30px;
+    }
+    .about-inner-area {
+        margin-top: 0;
+
+        .about-text {
+            margin-top: 30px;
+
+            h3 {
+                font-size: 17px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .about-image {
+        margin-bottom: 45px;
+    }
+    .about-inner-area {
+        margin-top: 30px;
+
+        .about-text {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+}

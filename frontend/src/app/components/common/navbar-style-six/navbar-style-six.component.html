@@ -1,0 +1,90 @@
+<div
+    class="navbar-area navbar-color-white"
+    [ngClass]="{'sticky': isSticky}"
+>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" [class.active]="classApplied">
+            <a class="navbar-brand" routerLink="/"><img src="assets/img/white-logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Home <i-feather name="chevron-down"></i-feather></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - One</a></li>
+                            <li class="nav-item"><a routerLink="/index-2" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Two</a></li>
+                            <li class="nav-item"><a routerLink="/index-3" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Three</a></li>
+                            <li class="nav-item"><a routerLink="/index-4" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Four</a></li>
+                            <li class="nav-item"><a routerLink="/index-5" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Five</a></li>
+                            <li class="nav-item"><a routerLink="/index-6" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Six</a></li>
+                            <li class="nav-item"><a routerLink="/index-7" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Seven</a></li>
+                            <li class="nav-item"><a routerLink="/index-8" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Eight</a></li>
+                            <li class="nav-item"><a routerLink="/index-9" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Nine</a></li>
+                            <li class="nav-item"><a routerLink="/index-10" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Ten</a></li>
+                            <li class="nav-item"><a routerLink="/index-11" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Home Demo - Static Image</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">About Us <i-feather name="chevron-down"></i-feather></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/about-1" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">About Style 1</a></li>
+                            <li class="nav-item"><a routerLink="/about-2" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">About Style 2</a></li>
+                            <li class="nav-item"><a routerLink="/about-3" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">About Style 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Pages <i-feather name="chevron-down"></i-feather></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Features <i-feather name="chevron-right"></i-feather></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a routerLink="/features" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Features</a></li>
+                                    <li class="nav-item"><a routerLink="/features-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Features Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Services <i-feather name="chevron-right"></i-feather></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a routerLink="/services" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Services</a></li>
+                                    <li class="nav-item"><a routerLink="/services-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Services Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Projects <i-feather name="chevron-right"></i-feather></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a routerLink="/projects" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Projects</a></li>
+                                    <li class="nav-item"><a routerLink="/projects-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Project Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a routerLink="/team" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Team</a></li>
+                            <li class="nav-item"><a routerLink="/pricing" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Pricing</a></li>
+                            <li class="nav-item"><a routerLink="/faq" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">FAQ</a></li>
+                            <li class="nav-item"><a routerLink="/coming-soon" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Coming Soon</a></li>
+                            <li class="nav-item"><a routerLink="/404-error" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">404 Error Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Shop <i-feather name="chevron-down"></i-feather></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/products" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Products</a></li>
+                            <li class="nav-item"><a routerLink="/products-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Products Details</a></li>
+                            <li class="nav-item"><a routerLink="/cart" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Cart</a></li>
+                            <li class="nav-item"><a routerLink="/checkout" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Checkout</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="javascript:void(0)" class="nav-link dropdown-toggle">Blog <i-feather name="chevron-down"></i-feather></a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item"><a routerLink="/blog-grid" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Blog Grid</a></li>
+                            <li class="nav-item"><a routerLink="/blog-right-sidebar" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Blog Right Sidebar</a></li>
+                            <li class="nav-item"><a routerLink="/blog-details" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a routerLink="/contact" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="others-option">
+                    <a routerLink="/cart" class="cart-wrapper-btn"><i-feather name="shopping-cart"></i-feather><span>0</span></a>
+                    <a routerLink="/" class="btn btn-primary">Schedule a Demo</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

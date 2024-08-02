@@ -1,0 +1,964 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<!-- Main Banner -->
+<div class="main-banner" *ngFor="let bgImage of bannerBGImage;" style="background-image: url({{bgImage.img}});">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="hero-content">
+                            <h1>Built for Developers</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                            <a routerLink="/" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-2">
+                        <div class="banner-form ml-3">
+                            <form>
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" placeholder="Enter username">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control" placeholder="Create a password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape5"><img src="assets/img/shape5.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Boxes -->
+<div class="boxes-area">
+    <div class="container">
+        <div class="row">
+            <div class="boxes-slides">
+                <owl-carousel-o [options]="boxesSlides">
+                    <ng-template carouselSlide>
+                        <div class="single-box">
+                            <div class="icon">
+                                <i-feather name="airplay"></i-feather>
+                            </div>
+                            <h3>Fully Customizable</h3>
+                            <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="single-box bg-f78acb">
+                            <div class="icon">
+                                <i-feather name="pen-tool"></i-feather>
+                            </div>
+                            <h3>Professional Tools</h3>
+                            <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="single-box bg-eb6b3d">
+                            <div class="icon">
+                                <i-feather name="pie-chart"></i-feather>
+                            </div>
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="single-box bg-c679e3">
+                            <div class="icon">
+                                <i-feather name="server"></i-feather>
+                            </div>
+                            <h3>Easily To Use</h3>
+                            <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="single-box bg-eb6b3d">
+                            <div class="icon">
+                                <i-feather name="target"></i-feather>
+                            </div>
+                            <h3>App Integration</h3>
+                            <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna.</p>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Cloud Hosting Services -->
+<div class="services-area ptb-80 bg-f7fafd">
+    <div class="container">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 services-content">
+                <div class="section-title">
+                    <h2>Cloud Hosting Services</h2>
+                    <div class="bar"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="database"></i-feather> Cloud databases
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="globe"></i-feather> Website hosting
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="file"></i-feather> File storage
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="trending-up"></i-feather> Forex trading
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="folder"></i-feather> File backups
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="monitor"></i-feather> Remote desktop
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="mail"></i-feather> Email servers
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="cloud"></i-feather> Hybrid cloud
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 services-right-image">
+                <img src="assets/img/services-right-image/book-self.png" class="animate__animated animate__fadeInDown" alt="book-self">
+                <img src="assets/img/services-right-image/box.png" class="animate__animated animate__fadeInUp" alt="box">
+                <img src="assets/img/services-right-image/chair.png" class="animate__animated animate__fadeInLeft" alt="chair">
+                <img src="assets/img/services-right-image/cloud.png" class="animate__animated animate__zoomIn" alt="cloud">
+                <img src="assets/img/services-right-image/cup.png" class="animate__animated animate__bounceIn" alt="cup">
+                <img src="assets/img/services-right-image/flower-top.png" class="animate__animated animate__fadeInDown" alt="flower">
+                <img src="assets/img/services-right-image/head-phone.png" class="animate__animated animate__zoomIn" alt="head-phone">
+                <img src="assets/img/services-right-image/monitor.png" class="animate__animated animate__fadeInUp" alt="monitor">
+                <img src="assets/img/services-right-image/mug.png" class="animate__animated animate__rotateIn" alt="mug">
+                <img src="assets/img/services-right-image/table.png" class="animate__animated animate__fadeInUp" alt="table">
+                <img src="assets/img/services-right-image/tissue.png" class="animate__animated animate__zoomIn" alt="tissue">
+                <img src="assets/img/services-right-image/water-bottle.png" class="animate__animated animate__zoomIn" alt="water-bottle">
+                <img src="assets/img/services-right-image/wifi.png" class="animate__animated animate__fadeInLeft" alt="wifi">
+                <img src="assets/img/services-right-image/cercle-shape.png" class="bg-image rotateme" alt="shape">
+                <img src="assets/img/services-right-image/main-pic.png" class="animate__animated animate__fadeInUp" alt="main-pic">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Design & Development Services -->
+<div class="services-area ptb-80">
+    <div class="container">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 services-left-image">
+                <img src="assets/img/services-left-image/big-monitor.png" class="animate__animated animate__fadeInDown" alt="big-monitor">
+                <img src="assets/img/services-left-image/creative.png" class="animate__animated animate__fadeInUp" alt="creative">
+                <img src="assets/img/services-left-image/developer.png" class="animate__animated animate__fadeInLeft" alt="developer">
+                <img src="assets/img/services-left-image/flower-top.png" class="animate__animated animate__zoomIn" alt="flower-top">
+                <img src="assets/img/services-left-image/small-monitor.png" class="animate__animated animate__bounceIn" alt="small-monitor">
+                <img src="assets/img/services-left-image/small-top.png" class="animate__animated animate__fadeInDown" alt="small-top">
+                <img src="assets/img/services-left-image/table.png" class="animate__animated animate__zoomIn" alt="table">
+                <img src="assets/img/services-left-image/target.png" class="animate__animated animate__fadeInUp" alt="target">
+                <img src="assets/img/services-left-image/cercle-shape.png" class="bg-image rotateme" alt="shape">
+                <img src="assets/img/services-left-image/main-pic.png" class="animate__animated animate__fadeInUp" alt="main-pic">
+            </div>
+            <div class="col-lg-6 col-md-12 services-content">
+                <div class="section-title">
+                    <h2>Design & Development</h2>
+                    <div class="bar"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="layout"></i-feather> Responsive design
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="code"></i-feather> React web development
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="smartphone"></i-feather> Android apps development
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="code"></i-feather> Laravel web development
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="smartphone"></i-feather> iOS apps development
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="pen-tool"></i-feather> UX/UI design
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="shopping-cart"></i-feather> E-commerce development
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="box">
+                            <i-feather name="check-circle"></i-feather> Print ready design
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<div class="services-area-two ptb-80 bg-f7fafd">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Services</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <i-feather name="settings"></i-feather>
+                    </div>
+                    <h3>Incredible Infrastructure</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <i-feather name="mail"></i-feather>
+                    </div>
+                    <h3>Email Notifications</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon">
+                        <i-feather name="bell"></i-feather>
+                    </div>
+                    <h3>Best Analytics Audits</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon bg-c679e3">
+                        <i-feather name="grid"></i-feather>
+                    </div>
+                    <h3>Simple Dashboard</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon bg-c679e3">
+                        <i-feather name="info"></i-feather>
+                    </div>
+                    <h3>Information Retrieval</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon bg-c679e3">
+                        <i-feather name="hard-drive"></i-feather>
+                    </div>
+                    <h3>Deep Technical SEO</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon bg-eb6b3d">
+                        <i-feather name="mouse-pointer"></i-feather>
+                    </div>
+                    <h3>Drag and Drop Functionality</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon bg-eb6b3d">
+                        <i-feather name="bell"></i-feather>
+                    </div>
+                    <h3>Deadline Reminders</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services-box">
+                    <div class="icon bg-eb6b3d">
+                        <i-feather name="send"></i-feather>
+                    </div>
+                    <h3>Modern Keyword Analysis</h3>
+                    <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team -->
+<div class="team-area ptb-80 bg-f9f6f6">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Awesome Team</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="container-fluid p-0">
+        <div class="team-slides">
+            <owl-carousel-o [options]="teamSlides">
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/1.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Josh Buttler</h3>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/2.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Alex Maxwel</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/3.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Janny Cotller</h3>
+                                <span>Web Developer</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/4.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Jason Statham</h3>
+                                <span>UX/UI Designer</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/5.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Corey Anderson</h3>
+                                <span>Project Manager</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/1.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Josh Buttler</h3>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/2.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Alex Maxwel</h3>
+                                <span>Marketing Manager</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/3.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Janny Cotller</h3>
+                                <span>Web Developer</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/4.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Jason Statham</h3>
+                                <span>UX/UI Designer</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-team">
+                        <div class="team-image">
+                            <img src="assets/img/team-image/5.jpg" alt="image">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Corey Anderson</h3>
+                                <span>Project Manager</span>
+                            </div>
+                            <ul>
+                                <li><a href="#" target="_blank"><i-feather name="facebook"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="twitter"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="linkedin"></i-feather></a></li>
+                                <li><a href="#" target="_blank"><i-feather name="gitlab"></i-feather></a></li>
+                            </ul>
+                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Funfacts -->
+<div class="funfacts-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>We always try to understand users expectation</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="180">00</span>K</h3>
+                    <p>Downloaded</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="20">00</span>K</h3>
+                    <p>Feedback</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="500">00</span>+</h3>
+                    <p>Workers</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="70">00</span>+</h3>
+                    <p>Contributors</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-cta-box">
+            <h3>Have any question about us?</h3>
+            <p>Don't hesitate to contact us</p>
+            <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+        <div class="map-bg">
+            <img src="assets/img/map.png" alt="map">
+        </div>
+    </div>
+</div>
+
+<!-- Pricing -->
+<div class="pricing-area ptb-80 bg-f9f6f6">
+    <div class="container">
+        <div class="section-title">
+            <h2>Pricing Plans</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-table">
+                    <div class="pricing-header">
+                        <h3>Basic Plan</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>15.00 <span>/Mon</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="active">5 GB Bandwidth</li>
+                            <li class="active">Highest Speed</li>
+                            <li class="active">1 GB Storage</li>
+                            <li class="active">Unlimited Website</li>
+                            <li class="active">Unlimited Users</li>
+                            <li class="active">24x7 Great Support</li>
+                            <li>Data Security and Backups</li>
+                            <li>Monthly Reports and Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a routerLink="/" class="btn btn-primary">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-table active-plan">
+                    <div class="pricing-header">
+                        <h3>Advanced Plan</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>35.00 <span>/Mon</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="active">10 GB Bandwidth</li>
+                            <li class="active">Highest Speed</li>
+                            <li class="active">3 GB Storage</li>
+                            <li class="active">Unlimited Website</li>
+                            <li class="active">Unlimited Users</li>
+                            <li class="active">24x7 Great Support</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li>Monthly Reports and Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a routerLink="/" class="btn btn-primary">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="pricing-table">
+                    <div class="pricing-header">
+                        <h3>Expert Plan</h3>
+                    </div>
+                    <div class="price">
+                        <span><sup>$</sup>65.00 <span>/Mon</span></span>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li class="active">15 GB Bandwidth</li>
+                            <li class="active">Highest Speed</li>
+                            <li class="active">5 GB Storage</li>
+                            <li class="active">Unlimited Website</li>
+                            <li class="active">Unlimited Users</li>
+                            <li class="active">24x7 Great Support</li>
+                            <li class="active">Data Security and Backups</li>
+                            <li class="active">Monthly Reports and Analytics</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a routerLink="/" class="btn btn-primary">Select Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+</div>
+
+<!-- Feedback -->
+<div class="feedback-area ptb-80 bg-f7fafd">
+    <div class="container">
+        <div class="section-title">
+            <h2>What users Saying</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="feedback-slides">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-img">
+                            <img src="assets/img/client-image/1.jpg" alt="image">
+                        </div>
+                        <h3>John Lucy</h3>
+                        <span>Web Developer</span>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-img">
+                            <img src="assets/img/client-image/2.jpg" alt="image">
+                        </div>
+                        <h3>John Smith</h3>
+                        <span>Web Developer</span>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-img">
+                            <img src="assets/img/client-image/3.jpg" alt="image">
+                        </div>
+                        <h3>Maxwel Warner</h3>
+                        <span>Web Developer</span>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-img">
+                            <img src="assets/img/client-image/4.jpg" alt="image">
+                        </div>
+                        <h3>Ross Taylor</h3>
+                        <span>Web Developer</span>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-feedback">
+                        <div class="client-img">
+                            <img src="assets/img/client-image/5.jpg" alt="image">
+                        </div>
+                        <h3>James Anderson</h3>
+                        <span>Web Developer</span>
+                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape5"><img src="assets/img/shape5.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Ready to Talk -->
+<div class="ready-to-talk">
+    <div class="container">
+        <h3>Ready to talk?</h3>
+        <p>Our team is here to answer your question about Profun</p>
+        <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+        <span><a routerLink="/">Or, get started now with a free trial</a></span>
+    </div>
+</div>
+
+<!-- Partner -->
+<div class="partner-area partner-section">
+    <div class="container">
+        <h5>More that 1.5 million businesses and organizations use Profun</h5>
+        <div class="partner-inner">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-1.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover1.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-2.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover2.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-3.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover3.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-4.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover4.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-5.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover5.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-6.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover6.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-7.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover7.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-8.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover8.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-9.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover9.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-10.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover10.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-11.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover11.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-12.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover12.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-13.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover13.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-14.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover14.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-15.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover15.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-16.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover16.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-17.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover17.png" alt="partner">
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 col-sm-4">
+                    <a href="#" target="_blank">
+                        <img src="assets/img/partner-img/partner-18.png" alt="partner">
+                        <img src="assets/img/partner-img/partner-hover18.png" alt="partner">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Blog -->
+<div class="blog-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>The News from Our Blog</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="blog-image">
+                        <a routerLink="/blog-details">
+                            <img src="assets/img/blog-image/1.jpg" alt="image">
+                        </a>
+                        <div class="date">
+                            <i-feather name="calendar"></i-feather> March 15, 2024
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <h3><a routerLink="/blog-details">The security risks of changing package owners</a></h3>
+                        <span>by <a routerLink="/blog-grid">Admin</a></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <a routerLink="/blog-details" class="read-more-btn">Read More <i-feather name="arrow-right"></i-feather></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="blog-image">
+                        <a routerLink="/blog-details">
+                            <img src="assets/img/blog-image/2.jpg" alt="image">
+                        </a>
+                        <div class="date">
+                            <i-feather name="calendar"></i-feather> March 17, 2024
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <h3><a routerLink="/blog-details">Tips to Protecting Your Business and Family</a></h3>
+                        <span>by <a routerLink="/blog-grid">Smith</a></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <a routerLink="/blog-details" class="read-more-btn">Read More <i-feather name="arrow-right"></i-feather></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post">
+                    <div class="blog-image">
+                        <a routerLink="/blog-details">
+                            <img src="assets/img/blog-image/3.jpg" alt="image">
+                        </a>
+                        <div class="date">
+                            <i-feather name="calendar"></i-feather> March 19, 2024
+                        </div>
+                    </div>
+                    <div class="blog-post-content">
+                        <h3><a routerLink="/blog-details">Protect Your Workplace from Cyber Attacks</a></h3>
+                        <span>by <a routerLink="/blog-grid">John</a></span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <a routerLink="/blog-details" class="read-more-btn">Read More <i-feather name="arrow-right"></i-feather></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

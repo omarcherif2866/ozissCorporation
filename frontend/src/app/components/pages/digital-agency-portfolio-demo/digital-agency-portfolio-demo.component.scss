@@ -1,0 +1,450 @@
+/*main-banner-css*/
+.agency-portfolio-main-banner {
+    z-index: 1;
+    height: 100vh;
+    position: relative;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: cover;
+    };
+}
+.portfolio-banner-content {
+    text-align: center;
+    max-width: 700px;
+    margin: {
+        left: auto;
+        right: auto;
+        top: -50px;
+    };
+    .sub-title {
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        color: var(--paragraphColor);
+        margin-bottom: 10px;
+    }
+    h1 {
+        margin-bottom: 15px;
+        line-height: 1.3;
+        font: {
+            size: 40px;
+            weight: 500;
+        };
+    }
+    p {
+        font-size: 15px;
+        max-width: 490px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+    }
+    .btn {
+        margin-top: 5px;
+    }
+}
+
+/*projects-css*/
+.our-latest-projects {
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 1;
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+}
+.single-latest-projects {
+    margin-bottom: 30px;
+    position: relative;
+
+    .link-btn {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .content {
+        position: absolute;
+        left: -5%;
+        top: 60%;
+        transform: translateY(-60%);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        background-color: var(--whiteColor);
+        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+        padding: 25px;
+        margin-top: 20px;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        h3 {
+            margin-bottom: 0;
+            font: {
+                weight: 600;
+                size: 20px;
+            };
+        }
+    }
+    &:hover {
+        .content {
+            opacity: 1;
+            visibility: visible;
+            margin-top: 0;
+        }
+    }
+}
+
+/*about-css*/
+.agency-portfolio-about-area {
+    background-color: #f4f4f4;
+}
+.single-text-box {
+    h3 {
+        margin: {
+            bottom: 12px;
+            top: 25px;
+        };
+        font: {
+            weight: 600;
+            size: 22px;
+        };
+    }
+    .learn-more-btn {
+        color: #365267;
+        font: {
+            size: var(--fontSize);
+            weight: 600;
+        };
+        i-feather {
+            top: -1px;
+            width: 18px;
+            margin-right: 3px;
+            position: relative;
+        }
+        &:hover {
+            color: var(--mainColor);
+        }
+    }
+}
+
+/*feedback-css*/
+.agency-portfolio-feedback-slides {
+    max-width: 730px;
+    margin: {
+        left: auto;
+        right: auto;
+    };
+}
+.agency-portfolio-feedback-item {
+    margin-bottom: 20px;
+    text-align: center;
+
+    img {
+        display: inline-block !important;
+        border: 3px solid #999999;
+        width: auto !important;
+        border-radius: 50%;
+    }
+    p {
+        font-size: 16px;
+        margin: {
+            top: 20px;
+            bottom: 0;
+        };
+    }
+}
+
+/*partner-css*/
+.agency-portfolio-partner-area {
+    background-color: var(--blackColor);
+}
+.single-agency-portfolio-partner {
+    text-align: center;
+
+    a {
+        display: block;
+
+        img {
+            width: auto !important;
+            display: inline-block !important;
+        }
+    }
+}
+
+/*blog-css*/
+.blog-area {
+    z-index: 1;
+    position: relative;
+    padding-bottom: 50px;
+}
+.single-blog-item {
+    margin-bottom: 30px;
+
+    .post-image {
+        text-align: center;
+
+        a {
+            display: block;
+        }
+    }
+    .post-content {
+        margin-top: 20px;
+
+        .post-meta {
+            padding-left: 0;
+            margin-bottom: 10px;
+            list-style-type: none;
+
+            li {
+                display: inline-block;
+                margin-right: 25px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    right: -20px;
+                    width: 10px;
+                    height: 1px;
+                    background-color: var(--paragraphColor);
+                }
+                &:last-child {
+                    margin-right: 0;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        h3 {
+            line-height: 30px;
+            margin-bottom: 0;
+            font: {
+                weight: 600;
+                size: 20px;
+            };
+        }
+    }
+}
+.blog-slides {
+    margin-bottom: 30px;
+}
+
+/*creative-css*/
+.creative-area {
+    height: 650px;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        attachment: fixed;
+        size: cover;
+    };
+    .container {
+        position: relative;
+    }
+    .d-table-cell {
+        vertical-align: bottom;
+    }
+}
+.creative-inner-area {
+    max-width: 600px;
+    margin-left: auto;
+
+    .single-counter {
+        background-color: var(--blackColor);
+        padding: 60px;
+
+        h3 {
+            color: var(--whiteColor);
+            margin-bottom: 5px;
+            font: {
+                size: 32px;
+                weight: 700;
+            };
+            .odometer-formatting-mark {
+                display: none;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            line-height: initial;
+            color: var(--whiteColor);
+            font: {
+                size: 15px;
+                weight: 600;
+            };
+        }
+    }
+    .row {
+        margin: {
+            left: 0;
+            right: 0;
+        };
+    }
+    .col-lg-6 {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        &:nth-child(1) {
+            .single-counter {
+                background-color: var(--mainColor);
+            }
+        }
+        &:nth-child(2) {
+            .single-counter {
+                background-color: var(--blackColor);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .agency-portfolio-main-banner {
+        height: 100%;
+        padding: {
+            top: 150px;
+            bottom: 120px;
+        };
+    }
+    .portfolio-banner-content {
+        text-align: center;
+        max-width: 100%;
+        margin-top: 0;
+        
+        .sub-title {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 25px;
+            margin-bottom: 12px;
+        }
+        p {
+            max-width: 100%;
+            font-size: 13px;
+        }
+    }
+    
+    .our-latest-projects {
+        padding-bottom: 20px;
+    }
+    .single-latest-projects {
+        img {
+            width: 100%;
+        }
+        .content {
+            left: 5%;
+
+            h3 {
+                font-size: 17px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .agency-portfolio-about-area {
+        padding-bottom: 20px;
+    }
+    .single-text-box {
+        text-align: center;
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 17px;
+        }
+    }
+
+    .agency-portfolio-feedback-slides {
+        max-width: 100%;
+    }
+    .agency-portfolio-feedback-item {
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .single-blog-item {
+        .post-content {
+            h3 {
+                line-height: 28px;
+                font-size: 17px;
+            }
+        }
+    }
+
+    .creative-inner-area {
+        .single-counter {
+            padding: 30px;
+            text-align: center;
+
+            h3 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .agency-portfolio-main-banner {
+        height: 100%;
+        padding: {
+            top: 200px;
+            bottom: 150px;
+        };
+    }
+    .portfolio-banner-content {
+        text-align: center;
+        margin-top: 0;
+
+        .sub-title {
+            font-size: 15px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .our-latest-projects {
+        .section-title {
+            margin-bottom: 40px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+}

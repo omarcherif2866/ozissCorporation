@@ -1,0 +1,120 @@
+/*faq-css*/
+.faq-accordion {
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
+    background: var(--whiteColor);
+    border-radius: 10px;
+    padding: 60px;
+
+    .accordion {
+        .accordion-section {
+            margin-bottom: 15px;
+            background-color: var(--whiteColor);
+            
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .accordion-header {
+                display: block;
+                cursor: pointer;
+                position: relative;
+                background: #f5f9ff;
+                padding: 14px 20px 14px 55px;
+                font: {
+                    size: 16px;
+                    weight: 500;
+                };
+                &::before {
+                    top: 0;
+                    left: 0;
+                    width: 40px;
+                    height: 100%;
+                    content: "\ebc0";
+                    line-height: 52px;
+                    position: absolute;
+                    text-align: center;
+                    color: var(--whiteColor);
+                    background: var(--mainColor);
+                    transition: var(--transition);
+                    font: {
+                        family: 'boxicons';
+                        size: 20px;
+                    };
+                }
+                &.open {
+                    &::before {
+                        content: "\eb8b";
+                    }
+                }
+            }
+            .accordion-content {
+                padding-top: 15px;
+                display: none;
+
+                &.open {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+.faq-contact {
+    padding: 60px;
+    margin-top: 45px;
+    border-radius: 4px;
+    background: var(--whiteColor);
+    box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+    form {
+        .btn {
+            margin-top: 10px;
+        }
+    }
+    textarea.form-control {
+        height: auto;
+        min-height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .faq-accordion {
+        padding: 0;
+        box-shadow: unset;
+        
+        .accordion {
+            .accordion-section {
+                .accordion-header {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .faq-contact {
+        padding: 30px 20px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+}

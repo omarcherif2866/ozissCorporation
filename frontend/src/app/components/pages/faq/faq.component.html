@@ -1,0 +1,108 @@
+<app-navbar-style-one></app-navbar-style-one>
+
+<!-- Page Title -->
+<div class="page-title-area">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <h2>FAQ</h2>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape5"><img src="assets/img/shape5.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- FAQ -->
+<div class="faq-area ptb-80">
+    <div class="container">
+        <div class="faq-accordion">
+            <div class="accordion">
+                <div class="accordion-section">
+                    <div class="accordion-header" (click)="toggleSection(0)" [ngClass]="{ 'open': isSectionOpen(0) }">
+                        How do permissions work in Google Play Instant?
+                    </div>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(0) }">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-section">
+                    <div class="accordion-header" (click)="toggleSection(1)" [ngClass]="{ 'open': isSectionOpen(1) }">
+                        Is Smart Lock required for instant apps?
+                    </div>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(1) }">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-section">
+                    <div class="accordion-header" (click)="toggleSection(2)" [ngClass]="{ 'open': isSectionOpen(2) }">
+                        Can I have multiple activities in a single feature?
+                    </div>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(2) }">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-section">
+                    <div class="accordion-header" (click)="toggleSection(3)" [ngClass]="{ 'open': isSectionOpen(3) }">
+                        Can I share resources between features?
+                    </div>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(3) }">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-section">
+                    <div class="accordion-header" (click)="toggleSection(4)" [ngClass]="{ 'open': isSectionOpen(4) }">
+                        Is multidex supported for instant apps?
+                    </div>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(4) }">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="accordion-section">
+                    <div class="accordion-header" (click)="toggleSection(5)" [ngClass]="{ 'open': isSectionOpen(5) }">
+                        Can I share resources between features?
+                    </div>
+                    <div class="accordion-content" [ngClass]="{ 'open': isSectionOpen(5) }">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="faq-contact">
+            <h3>Ask Your Question</h3>
+            <form>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <div class="form-group">
+                            <textarea name="message" cols="30" rows="6" placeholder="Message" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12">
+                        <button class="btn btn-primary" type="submit">Submit Now!</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

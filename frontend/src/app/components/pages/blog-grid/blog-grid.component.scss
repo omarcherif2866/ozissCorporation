@@ -1,0 +1,39 @@
+@import "../home-demo-one/home-demo-one.component.scss";
+
+.blog-area {
+    .pagination-area {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .blog-area {
+        .widget-area {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .blog-area {
+        .widget-area {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1550px) {
+
+}

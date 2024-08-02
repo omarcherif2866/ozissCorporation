@@ -1,0 +1,731 @@
+<app-navbar-style-three></app-navbar-style-three>
+
+<!-- Main Banner -->
+<div class="ml-main-banner" *ngFor="let bgImage of bannerBGImage;" style="background-image: url({{bgImage.img}});">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="ml-banner-content">
+                    <h1>World’s Leading AI & Machine Learning Company</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                    <a routerLink="/" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="ml-banner-single-image animate__animated animate__fadeInUp">
+                    <img src="assets/img/ml-banner-image/main-pic.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Partner -->
+<div class="ml-partner-area mt-minus-top ptb-80 pb-0">
+    <div class="container">
+        <div class="partner-slides">
+            <owl-carousel-o [options]="partnerSlides">
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-1.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover1.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-2.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover2.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-3.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover3.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-10.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover10.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-5.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover5.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-6.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover6.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-partner">
+                        <a href="#" target="_blank">
+                            <img src="assets/img/partner-img/partner-7.png" alt="image">
+                            <img src="assets/img/partner-img/partner-hover7.png" alt="image">
+                        </a>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>
+
+<!-- Solutions -->
+<div class="solutions-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">What We Offer</span>
+            <h2>Our Featured Solutions</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img src="assets/img/icon4.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Robotic Automation</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img src="assets/img/icon5.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Cognitive Automation</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img src="assets/img/icon6.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Cognitive Engagement</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-md-6">
+                <div class="single-solutions-box">
+                    <div class="icon">
+                        <img src="assets/img/icon7.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Security & Surveillance</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    <a routerLink="/" class="learn-more-btn"><i-feather name="plus-circle"></i-feather> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- About -->
+<div class="about-area pt-0 ptb-80">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="ml-about-img">
+                    <img src="assets/img/about4.png" alt="image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="ml-about-content">
+                    <span class="sub-title">About Us</span>
+                    <h2>Engaging New Audiences Through Smart Approach</h2>
+                    <div class="bar"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.Donec vitae sapien ut libero venenatis faucibus tempus.</p>
+                    <a routerLink="/" class="btn btn-secondary">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Services -->
+<div class="ml-services-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <span class="sub-title">Our Solutions</span>
+            <h2>Our Services</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="single-ml-services-box">
+                    <div class="image">
+                        <img src="assets/img/services-image/1.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">IT Professionals</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="single-ml-services-box">
+                    <div class="image">
+                        <img src="assets/img/services-image/2.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Software Engineers</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="single-ml-services-box">
+                    <div class="image">
+                        <img src="assets/img/services-image/3.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Health & Manufacturing</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="single-ml-services-box">
+                    <div class="image">
+                        <img src="assets/img/services-image/4.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Security & Surveillance</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="single-ml-services-box">
+                    <div class="image">
+                        <img src="assets/img/services-image/5.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Automatic Optimization</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-md-6">
+                <div class="single-ml-services-box">
+                    <div class="image">
+                        <img src="assets/img/services-image/6.png" alt="image">
+                    </div>
+                    <h3><a routerLink="/">Data Analysts</a></h3>
+                    <p>Lorem ipsum dolor sit amet elit, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Funfacts -->
+<div class="funfacts-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>We always try to understand users expectation</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="180">00</span>K</h3>
+                    <p>Downloaded</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="20">00</span>K</h3>
+                    <p>Feedback</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="500">00</span>+</h3>
+                    <p>Workers</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6 col-sm-3">
+                <div class="funfact">
+                    <h3><span [countUp]="70">00</span>+</h3>
+                    <p>Contributors</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-cta-box">
+            <h3>Have any question about us?</h3>
+            <p>Don't hesitate to contact us</p>
+            <a routerLink="/contact" class="btn btn-primary">Contact Us</a>
+        </div>
+        <div class="map-bg">
+            <img src="assets/img/map.png" alt="map">
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+	<div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+</div>
+
+<!-- Projects -->
+<div class="ml-projects-area pt-0 ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>Proud Projects That Make Us Stand Out</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="ml-projects-slides">
+            <owl-carousel-o [options]="projectsSlides">
+                <ng-template carouselSlide>
+                    <div class="single-ml-projects-box">
+                        <img src="assets/img/projects-img1.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a routerLink="/projects-details">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-projects-box">
+                        <img src="assets/img/projects-img2.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a routerLink="/projects-details">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-projects-box">
+                        <img src="assets/img/projects-img3.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a routerLink="/projects-details">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-projects-box">
+                        <img src="assets/img/projects-img4.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a routerLink="/projects-details">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-projects-box">
+                        <img src="assets/img/projects-img5.jpg" alt="image">
+                        <div class="plus-icon">
+                            <a routerLink="/projects-details">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Pricing -->
+<div class="pricing-area ptb-80 pt-0">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Pricing Plan</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="pricing-tab bg-color">
+            <ul class="nav-tabset">
+                <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab1'}">
+                    <span (click)="switchTab($event, 'tab1')">
+                        Monthly Plan
+                    </span>
+                </li>
+                <li class="nav-tab" [ngClass]="{'active': currentTab === 'tab2'}">
+                    <span (click)="switchTab($event, 'tab2')">
+                        Yearly Plan
+                    </span>
+                </li>
+            </ul>
+            <div class="tabs-container">
+                <div class="pane" id="tab1" *ngIf="currentTab === 'tab1'">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>Free</h3>
+                                    <p>Get your business up <br>and running</p>
+                                </div>
+                                <div class="price">
+                                    $0 <span>/m</span>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">Get Started Free</a>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i-feather name="check"></i-feather> Drag & Drop Builder</li>
+                                    <li><i-feather name="check"></i-feather> Lead Generation & Sales</li>
+                                    <li><i-feather name="check"></i-feather> Boot & Digital Assistants</li>
+                                    <li><i-feather name="check"></i-feather> Customer Service</li>
+                                    <li><i-feather name="check"></i-feather> Up to 1000 Subscribers</li>
+                                    <li><i-feather name="check"></i-feather> Unlimited Broadcasts</li>
+                                    <li><i-feather name="check"></i-feather> Landing Pages & Web Widgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>Pro</h3>
+                                    <p>Get your business up <br>and running</p>
+                                </div>
+                                <div class="price">
+                                    $149 <span>/m</span>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">Start 3 Days Free Trial</a>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i-feather name="check"></i-feather> Drag & Drop Builder</li>
+                                    <li><i-feather name="check"></i-feather> Lead Generation & Sales</li>
+                                    <li><i-feather name="check"></i-feather> Boot & Digital Assistants</li>
+                                    <li><i-feather name="check"></i-feather> Customer Service</li>
+                                    <li><i-feather name="check"></i-feather> Up to 3300 Subscribers</li>
+                                    <li><i-feather name="check"></i-feather> Unlimited Broadcasts</li>
+                                    <li><i-feather name="check"></i-feather> Landing Pages & Web Widgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>Premium</h3>
+                                    <p>Get your business up <br>and running</p>
+                                </div>
+                                <div class="price">
+                                    $179 <span>/m</span>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">Start 6 Days Free Trial</a>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i-feather name="check"></i-feather> Drag & Drop Builder</li>
+                                    <li><i-feather name="check"></i-feather> Lead Generation & Sales</li>
+                                    <li><i-feather name="check"></i-feather> Boot & Digital Assistants</li>
+                                    <li><i-feather name="check"></i-feather> Customer Service</li>
+                                    <li><i-feather name="check"></i-feather> Up to 10000 Subscribers</li>
+                                    <li><i-feather name="check"></i-feather> Unlimited Broadcasts</li>
+                                    <li><i-feather name="check"></i-feather> Landing Pages & Web Widgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pane" id="tab2" *ngIf="currentTab === 'tab2'">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>Free</h3>
+                                    <p>Get your business up <br>and running</p>
+                                </div>
+                                <div class="price">
+                                    $0 <span>/y</span>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">Get Started Free</a>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i-feather name="check"></i-feather> Drag & Drop Builder</li>
+                                    <li><i-feather name="check"></i-feather> Lead Generation & Sales</li>
+                                    <li><i-feather name="check"></i-feather> Boot & Digital Assistants</li>
+                                    <li><i-feather name="check"></i-feather> Customer Service</li>
+                                    <li><i-feather name="check"></i-feather> Up to 1000 Subscribers</li>
+                                    <li><i-feather name="check"></i-feather> Unlimited Broadcasts</li>
+                                    <li><i-feather name="check"></i-feather> Landing Pages & Web Widgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>Pro</h3>
+                                    <p>Get your business up <br>and running</p>
+                                </div>
+                                <div class="price">
+                                    $249 <span>/y</span>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">Start 3 Days Free Trial</a>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i-feather name="check"></i-feather> Drag & Drop Builder</li>
+                                    <li><i-feather name="check"></i-feather> Lead Generation & Sales</li>
+                                    <li><i-feather name="check"></i-feather> Boot & Digital Assistants</li>
+                                    <li><i-feather name="check"></i-feather> Customer Service</li>
+                                    <li><i-feather name="check"></i-feather> Up to 3300 Subscribers</li>
+                                    <li><i-feather name="check"></i-feather> Unlimited Broadcasts</li>
+                                    <li><i-feather name="check"></i-feather> Landing Pages & Web Widgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="pricing-box">
+                                <div class="pricing-header">
+                                    <h3>Premium</h3>
+                                    <p>Get your business up <br>and running</p>
+                                </div>
+                                <div class="price">
+                                    $279 <span>/y</span>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="#" class="btn btn-primary">Start 6 Days Free Trial</a>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i-feather name="check"></i-feather> Drag & Drop Builder</li>
+                                    <li><i-feather name="check"></i-feather> Lead Generation & Sales</li>
+                                    <li><i-feather name="check"></i-feather> Boot & Digital Assistants</li>
+                                    <li><i-feather name="check"></i-feather> Customer Service</li>
+                                    <li><i-feather name="check"></i-feather> Up to 10000 Subscribers</li>
+                                    <li><i-feather name="check"></i-feather> Unlimited Broadcasts</li>
+                                    <li><i-feather name="check"></i-feather> Landing Pages & Web Widgets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Feedback -->
+<div class="ml-feedback-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Clients Feedback</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="ml-feedback-slides">
+            <owl-carousel-o [options]="feedbackSlides">
+                <ng-template carouselSlide>
+                    <div class="single-ml-feedback-item">
+                        <div class="client-info">
+                            <img src="assets/img/client-image/1.jpg" alt="image">
+                            <h3>Sarah Taylor</h3>
+                            <span>CEO at Envato</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ullam harum sit. Accusantium veritatis dolore ducimus illum, cumque excepturi, autem rerum illo amet placeat odit corporis!</p>
+                        <div class="rating">
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-feedback-item">
+                        <div class="client-info">
+                            <img src="assets/img/client-image/3.jpg" alt="image">
+                            <h3>Steven Smith</h3>
+                            <span>CEO at Envato</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ullam harum sit. Accusantium veritatis dolore ducimus illum, cumque excepturi, autem rerum illo amet placeat odit corporis!</p>
+                        <div class="rating">
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="single-ml-feedback-item">
+                        <div class="client-info">
+                            <img src="assets/img/client-image/2.jpg" alt="image">
+                            <h3>James Eva</h3>
+                            <span>CEO at Envato</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid ullam harum sit. Accusantium veritatis dolore ducimus illum, cumque excepturi, autem rerum illo amet placeat odit corporis!</p>
+                        <div class="rating">
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                            <i-feather name="star"></i-feather>
+                        </div>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Blog -->
+<div class="blog-area ptb-80">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Recent Story</h2>
+            <div class="bar"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post-box">
+                    <div class="entry-thumbnail">
+                        <a routerLink="/blog-details"><img src="assets/img/blog-image/9.jpg" alt="image"></a>
+                    </div>
+                    <div class="entry-post-content">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><a routerLink="/blog-grid">Admin</a></li>
+                                <li>August 15, 2024</li>
+                            </ul>
+                        </div>
+                        <h3><a routerLink="/blog-details">Making Peace With The Feast Or Famine Of Freelancing</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+                        <a routerLink="/blog-details" class="learn-more-btn">Read Story <i-feather name="plus"></i-feather></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post-box">
+                    <div class="entry-thumbnail">
+                        <a routerLink="/blog-details"><img src="assets/img/blog-image/10.jpg" alt="image"></a>
+                    </div>
+                    <div class="entry-post-content">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><a routerLink="/blog-grid">Admin</a></li>
+                                <li>August 18, 2024</li>
+                            </ul>
+                        </div>
+                        <h3><a routerLink="/blog-details">I Used The Web For A Day On A 50 MB Budget</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+                        <a routerLink="/blog-details" class="learn-more-btn">Read Story <i-feather name="plus"></i-feather></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-blog-post-box">
+                    <div class="entry-thumbnail">
+                        <a routerLink="/blog-details"><img src="assets/img/blog-image/11.jpg" alt="image"></a>
+                    </div>
+                    <div class="entry-post-content">
+                        <div class="entry-meta">
+                            <ul>
+                                <li><a routerLink="/blog-grid">Admin</a></li>
+                                <li>August 15, 2024</li>
+                            </ul>
+                        </div>
+                        <h3><a routerLink="/blog-details">Here are the 5 most telling signs of micromanagement</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod...</p>
+                        <a routerLink="/blog-details" class="learn-more-btn">Read Story <i-feather name="plus"></i-feather></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape1"><img src="assets/img/shape11.png" alt="shape"></div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape3"><img src="assets/img/shape3.png" alt="shape"></div>
+    <div class="shape4"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
+
+<!-- Free Trial -->
+<div class="free-trial-area">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="free-trial-image">
+                    <img src="assets/img/free-trial-img.png" alt="image">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="free-trial-content">
+                    <h2>Start your free trial</h2>
+                    <form class="newsletter-form">
+                        <input type="email" class="input-newsletter" placeholder="Enter your business email here">
+                        <button type="submit">Sign Up Free</button>
+                    </form>
+                    <p>Test out the Machine Learning features for 14 days, no credit card required.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="shape2 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+    <div class="shape6 rotateme"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape7"><img src="assets/img/shape4.png" alt="shape"></div>
+    <div class="shape8 rotateme"><img src="assets/img/shape22.png" alt="shape"></div>
+</div>
